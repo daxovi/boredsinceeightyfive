@@ -1,0 +1,47 @@
+.splash {
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    animation: gummy 3s;
+  }
+  
+  .splash img {
+    margin: 0px -100%;
+    mix-blend-mode: multiply;
+    max-width: 100%;
+  }
+  
+  .splash img:nth-of-type(1) {
+    margin-left: 0px;
+  }
+  
+  .splash img:nth-of-type(4) {
+    margin-right: 0px;
+  }
+  
+  @media (max-aspect-ratio: 5/8.8) {
+  .splash {
+    height: auto;
+    aspect-ratio: 5/8.8;
+  }
+  }
+  
+  @keyframes gummy {
+    0% {
+      padding-left: 4em;
+      padding-right: 4em;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      padding: 1em;
+      opacity: 1;
+    }
+  
+  
+  }
+  
